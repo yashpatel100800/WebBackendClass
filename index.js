@@ -12,7 +12,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("/admin", adminRouter)
 app.use("/user", userRouter)
-app.use("/api", apiOne)
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
